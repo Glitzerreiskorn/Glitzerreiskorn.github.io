@@ -1,0 +1,118 @@
+<!DOCTYPE html> <!--kann theoretisch auch weggelassen werden-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAHAHAHAHAHAHAHAHA</title> <!--Titel vom Tab-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Gloock&display=swap" rel="stylesheet">
+    <style>
+        /* in diesem Block ist jetzt css angesagt */
+        html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: blueviolet;
+            font-size: 12px;
+            font-family: 'Comfortaa', cursive;
+
+        }
+
+        body {
+            background-color: aliceblue;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /*text-align: center;*/
+            width: 100rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            text-align: center;
+            color: green;
+            font-family: 'Gloock', serif;
+        }
+        body h1 {
+            color: orange;
+        }
+
+        article h1 {
+            color: red;
+        }
+
+        article > h1 {
+            color: yellow;
+        }
+
+        article > h1 ~ h1 {
+            color: pink;
+        }
+
+        article > h1:nth-child(3) {
+            color: #1176aa;
+        }
+
+        article header h1 {
+            text-decoration: underline;
+        }
+
+        article header:first-of-type h1 {
+            font-weight: lighter;
+        }
+
+        h1.nichtsuessigkeit {
+            font-size: 200%;
+        }
+
+        .nom {
+            border: 1px dotted #ff00ff;
+        }
+
+        #cute {
+            color: white;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            
+        }
+
+        .tight {
+            width: 15rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> blubbb </h1>
+    <p>jsljfajadsfl</p>
+    <p class="nom">steak</p>
+    <article>
+        <h1 class="nom">Keks</h1>
+        <h1 class="nom">Leibnitz</h1>
+        <h1 class="nom">Schokolade</h1>
+        <h1 class="nom">Praline</h1>
+        <h1 class="nichtsuessigkeit nom">Möpse</h1>
+        <header>
+            <h1 class="nichtsuessigkeit">
+                Bla
+            </h1>
+        </header>
+        <header>
+            <h1 class="nichtsuessigkeit" id="cute">
+                cutie
+            </h1>
+        </header>
+        <div class="tight">
+            <h1 class="nom">Kuchen</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus inventore sequi, ut sunt, a ipsam non obcaecati enim odit cumque perspiciatis dolor tempore expedita blanditiis, ipsum magnam provident incidunt ex.
+        </div>
+    </article>
+    
+</body>
+</html>
+
